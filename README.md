@@ -30,3 +30,14 @@ For a standard installation please follow the <a href="https://www.odoo.com/docu
 from the documentation.
 
 To learn the software, we recommend the <a href="https://www.odoo.com/slides">Odoo eLearning</a>, or <a href="https://www.odoo.com/page/scale-up-business-game">Scale-up</a>, the <a href="https://www.odoo.com/page/scale-up-business-game">business game</a>. Developers can start with <a href="https://www.odoo.com/documentation/15.0/developer/howtos.html">the developer tutorials</a>
+
+
+# RUN with custom_addons and UPDATE modules
+
+Custom modules are located on `custom_addons` folder.  
+
+```
+PS: > python odoo-bin -r <user> -w <password> --addons-path=custom_addons,addons -d <database> -u <module_to_be_updated>
+```
+
+On changes -> Restart and Upgrade app.
